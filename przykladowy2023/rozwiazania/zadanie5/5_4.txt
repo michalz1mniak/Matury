@@ -1,0 +1,3 @@
+SELECT Armator.Typ_dzialalnosci, COUNT(Armator.Id_armatora)
+FROM Armator
+GROUP BY Armator.Typ_dzialalnosci

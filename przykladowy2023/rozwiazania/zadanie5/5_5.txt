@@ -1,0 +1,5 @@
+SELECT DISTINCT Statki.Nazwa_statku
+FROM Statki
+JOIN Przybycia ON Statki.Nr_IMO = Przybycia.Nr_IMO
+JOIN Armator ON Przybycia.Id_armatora = Armator.Id_armatora
+WHERE Armator.armator = "XYZ
