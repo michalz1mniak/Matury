@@ -1,0 +1,3 @@
+SELECT uslugi_dodatkowe.rodzaj, COUNT(uslugi_dodatkowe.id_pobytu)
+FROM uslugi_dodatkowe
+GROUP BY uslugi_dodatkowe.rodzaj

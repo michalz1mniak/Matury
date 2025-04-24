@@ -1,0 +1,5 @@
+SELECT Klienci.imie, Klienci.nazwisko, SUM(uslugi_dodatkowe.cena_uslugi)
+FROM Klienci 
+JOIN Noclegi ON Klienci.nr_dowodu = Noclegi.nr_dowodu
+JOIN uslugi_dodatkowe ON Noclegi.id_pobytu = uslugi_dodatkowe.id_pobytu
+GROUP BY Klienci.nr_dowodu, Klienci.imie, Klienci.nazwisko
